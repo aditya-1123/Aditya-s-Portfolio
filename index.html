@@ -1,0 +1,609 @@
+<!doctype html> 
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" href="assets/images/Aditya_photo.jpg" type="image/x-icon">
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/5135d630a7.js" crossorigin="anonymous"></script>
+    
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap" rel="stylesheet">
+
+    <title>Aditya Gaikwad</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div id="portfolio-navbar-container" class="container-fluid" >
+        <header id="portfolio-navbar" class="d-flex flex-wrap py-3">
+
+            <ul id="portfolio-navbar-pills" class="nav nav-pills">
+                <li class="nav-item"><a href="#" class="nav-link" aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="#portfolio-about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#portfolio-experience" class="nav-link">Experience</a></li>
+                <li class="nav-item"><a href="#portfolio-education" class="nav-link">Education</a></li>
+                <li class="nav-item"><a href="#portfolio-projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#portfolio-skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#portfolio-highlights" class="nav-link">Certifications</a></li>
+                <li class="nav-item"><a href="#portfolio-achievements" class="nav-link">Achievements</a></li>
+            </ul>
+
+            <ul id="portfolio-sidebar-toggle" class="nav nav-pills">
+                <button type="button" onclick="openSidebar()"
+                    class="portfolio-sidebar-toggle-button btn btn-outline-primary"><i class="fas fa-bars"></i></button>
+            </ul>
+
+
+        </header>
+    </div>
+
+    <!-- Sidebar -->
+    <div id="portfolio-sidebar" class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;">
+
+        <div style="display: flex; margin-left:auto;"><button type="button" onclick="closeSidebar()" class="btn-close btn-close-white"
+                aria-label="Close"></button></div>
+
+        <hr>
+        <ul style="flex-direction: column;" id="portfolio-sidebar-pills" class="nav nav-pills">
+            <li class="nav-item"><a href="#" class="nav-link" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="#portfolio-about" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#portfolio-experience" class="nav-link">Experience</a></li>
+            <li class="nav-item"><a href="#portfolio-education" class="nav-link">Education</a></li>
+            <li class="nav-item"><a href="#portfolio-projects" class="nav-link">Projects</a></li>
+            <li class="nav-item"><a href="#portfolio-skills" class="nav-link">Skills</a></li>
+            <li class="nav-item"><a href="#portfolio-highlights" class="nav-link">Certifications</a></li>
+            <li class="nav-item"><a href="#portfolio-achievements" class="nav-link">Achievements</a></li>
+        </ul>
+
+    </div>
+
+
+    <!-- About -->
+    <div id="portfolio-about">
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2 class="portfolio-heading">About Me</h2>
+        <div class="container">
+            <div>
+                <div>
+                    <img style="height:auto;" alt="" width="180" height="180" id="portfolio-avatar"
+                        class="avatar avatar-user width-full border color-bg-primary"
+                        src="./assets/images/Aditya_photo.jpg">
+                </div>
+                <div>
+                    <br>
+                    <h4>Hello Everyone! &#128075;</h4>
+
+                    <p>
+                        I am <b>Aditya Gaikwad.</b><br>
+                        I believe that Software Engineering is all about learning the right tools at the right time<br>
+                        and I aim to become a good Software Engineer.<br>
+                        Keep scrolling, we might end up having a mutual interest :)
+                    </p>
+                    <div id="portfolio-hero-links">
+                        <a class="portfolio-hero-social-link" title="Github" target="_blank" href="https://github.com/aditya-1123"
+                            target="_blank"><i class="portfolio-hero-highlight fab fa-github"
+                                aria-hidden="true"></i></a>&nbsp;
+
+                        <a class="portfolio-hero-social-link" title="Leetcode" target="_blank" href="https://leetcode.com/u/Aditya_01123"
+                            target="_blank">
+                            <img width="38" height="40" src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/96/external-level-up-your-coding-skills-and-quickly-land-a-job-logo-shadow-tal-revivo.png" alt="external-level-up-your-coding-skills-and-quickly-land-a-job-logo-shadow-tal-revivo"/>
+                        </a>&nbsp;
+
+                        <a class="portfolio-hero-social-link" title="GeeksForGeeks" target="_blank"
+                            href="https://www.geeksforgeeks.org/user/gaikwadaditya1123" target="_blank"><img width="48" height="48" src="https://img.icons8.com/color/48/GeeksforGeeks.png" alt="GeeksforGeeks"/></a>&nbsp;
+
+                        <a class="portfolio-hero-social-link" title="HackerRank" target="_blank" href="https://www.hackerrank.com/profile/adityaGaikwad25" aria-hidden="true"><i class="portfolio-hero-highlight fab fa-brands fa-hackerrank"></i></a>&nbsp;
+
+                        <a class="portfolio-hero-social-link" title="LinkedIn" href="http://www.linkedin.com/in/aditya-gaikwad-107632230" target="_blank"><i class="portfolio-hero-highlight fab fa-linkedin" aria-hidden="true"></i></a>&nbsp;
+
+                        <a class="portfolio-hero-social-link" title="Instagram" target="_blank"
+                            href="https://www.instagram.com/adityagaikwad535/" target="_blank"><i
+                            class="portfolio-hero-highlight fab fa-instagram" aria-hidden="true"></i></a>&nbsp;
+
+                        <a class="portfolio-hero-social-link" title="Mail" target="_blank"
+                            href="mailto:gaikwadaditya1123@gmail.com" target="_blank"><i
+                                class="portfolio-hero-highlight fas fa-envelope" aria-hidden="true"></i></a>&nbsp;
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+
+    <!-- Experience -->
+    <div id="portfolio-experience">
+        <br>
+        <br>
+        <h2 class="portfolio-heading">Work Experience</h2>
+
+        <div class="portfolio-timeline">
+            <div class="portfolio-experience-card right">
+                <div class="portfolio-experience-card-content" data-date="January 2024 – March 2024">
+                    <img class="company-img" src="assets//images/prepway_solutions.jpg" width="100px" style="background-color: black;" />
+                    <h3 class="mt-3"><a target="_blank" href="https://www.tofler.in/prepway-solutions-private-limited/company/U85500PN2023PTC225974">Prepway Solutions Pvt.Ltd.</a></h3>
+                    <h4 >Python Developer Intern <br><small style="font-size: 14px;">Jan-2024 - Mar-24</small></h4>
+                    <p>
+                        <b>1. Developed a Blog Website and an E-Commerce Website.</b><br><br>
+                        <b>2. Worked with a dynamic tech stack, including Django, Django Rest Framework, SQLite, Git, and GitHub.</b><br><br>
+                        <b>3. Developed a dynamic blog website using Django, featuring user authentication and post management with robust backend functionality.</b><br><br>
+                        <b>4. Developed an e-commerce website with product display, catalog selection, cart management, checkout, and secure user authentication.</b><br>
+                    </p>
+                </div>
+            </div>
+            
+            <div class="portfolio-experience-card left">
+                <div class="portfolio-experience-card-content" data-date="March 2024 – May 2024">
+                    <img class="company-img" src="assets/images/eisystems_logo.png" width="200px" />
+                    <h3><a target="_blank" href="https://www.eisystems.in/">EISystems Technologies</a></h3>
+                    <h4>Machine Learning<br><small style="font-size: 14px;">Mar-2024 - May 2024</small></h4>
+                    <p>                     
+                        <b>1. Uses Flask for the web framework, with HTML, CSS, and JavaScript for the frontend interface, and Python for backend logic and data processing.</b><br><br>
+                        <b>2. Utilizes linear regression algorithms and advanced analytical techniques to analyze housing market data.</b><br><br>
+                        <b>3. Achieves an impressive accuracy of 84.5% in predicting house prices.</b><br><br>
+                        <b>4. Provides a dynamic and interactive user experience with a user-friendly interface and efficient data processing.</b><br>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>    
+
+    <!-- Education -->
+    <div id="portfolio-education">
+        <br>
+        <br>
+        <h2 class="portfolio-heading">Education 👨‍🎓</h2>
+        <div class="container">
+            <div class="portfolio-education-card card mb-3" style="max-width: 100%;">
+                <div class="row g-0">
+                    <div class="col-md-3">
+                        <img src="assets/images/nmiet-logo.jpg" class="portfolio-education-img img-fluid rounded-start ms-4 "
+                            alt="...">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body">
+                            <h4 class="card-title">NMIET (Nutan Maharashtra Institute of Engineering and Technology) - Pune University</h4>
+                            <h5 class="card-subtitle my-3"><strong>B.E.(Computer Engineering)</strong></h5>
+                            <h5 class="card-subtitle">2021 - 2025</h5>
+                            <p class="card-text">
+                            <ul>
+                                <li>CGPA - 8.95 CGPA (Semester VI)</li>
+                            </ul>
+                            </p>
+                            <p class="card-text"><small class="text-muted"></small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-education-card card mb-3" style="max-width: 100%;">
+                <div class="row g-0">
+                    <div class="col-md-3">
+                        <img src="assets/images/asm_csit_logo.jpg"  style="width: 100px " class="portfolio-education-img img-fluid rounded-start ms-5 mt-3"
+                            alt="...">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body">
+                            <h4 class="card-title">ASM (CSIT) College of Commerce, Science and Information Technology</h4>
+
+                            <p class="card-text">
+                            <ul>
+                                <li>
+                                    <b>Class XII (2020-2021, State Board) Board Exams: </b> 76.5%
+                                </li>
+                            </ul>
+                            </p>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-education-card card mb-3" style="max-width: 100%;">
+                <div class="row g-0">
+                    <div class="col-md-3">
+                        <img src="assets/images/vidya_niktean_logo.png" class="portfolio-education-img img-fluid rounded-start ms-5"
+                            alt="...">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body">
+                            <h4 class="card-title">Vidya Niketan English Medium School</h4>
+
+                            <p class="card-text">
+                            <ul>
+                                <li>
+                                    <b>Class X (2018-2019, State Board) Board Exams: </b> 84.6%
+                                </li>
+                            </ul>
+                            </p>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <!-- Projects -->
+
+    <div id="portfolio-projects">
+        <br>
+        <br>
+        <h2 class="portfolio-heading">Projects 👨‍💻</h2>
+        <div class="container">
+
+            <div class="portfolio-project-card card mb-3" style="max-width: 100%;">
+                <div class="row g-0">
+                    <div class="col-md-3 center">
+                        <img src="assets/images/house_pune.png" class="portfolio-project-img img-fluid rounded-start"
+                            alt="...">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body">
+                            <h4 class="card-title"><strong>Pune’s House Price Prediction Web App</strong></h4>
+                            <!-- <h6 class="card-subtitle my-2"> AI Blog Generator and Audio Analyzer</h6> -->
+                            
+                            <p class="card-test">Predicts house prices with 84.5% accuracy by following a series of steps:</p>
+                            <p class="card-text">
+                            <ul style="list-style-type: none;">
+                                <li><i class="fa-solid fa-square-check"></i> Data Collection - Gathered housing data from Kaggle.</li>
+                                <li><i class="fa-solid fa-square-check"></i> Data Cleaning - Preprocessed the data by handling missing values and normalizing features.</li>
+                                <li><i class="fa-solid fa-square-check"></i> Feature Engineering -  Created new features to improve model accuracy.</li>
+                                <li><i class="fa-solid fa-square-check"></i> Model Building - Developed a <strong>Linear Regression model</strong> to predict house prices.</li>
+                                <li><i class="fa-solid fa-square-check"></i> Model Evaluation - Achieved <strong>84.5%</strong> accuracy in model predictions.</li>
+                                <li><i class="fa-solid fa-square-check"></i> Web App Development - Integrated the model into a Flask app for real-time predictions.</li>
+                                <li><i class="fa-solid fa-square-check"></i> <strong>Technologies</strong> - Python, Flask, Linear Regression, etc.</li>
+                               
+                            </ul>
+                            </p>
+                        
+                            <div class="container mt-4">
+                                <div class="row justify-content-end">
+                                    <div class="col-auto d-flex align-items-center">
+                                        <p class="mb-0">
+                                            <a target="_blank" class="btn btn-outline-danger" style="color:black !important; margin-right: 20px;" href="https://github.com/aditya-1123/House_price_prediction_model">
+                                                <i style="color:black !important" class="fab fa-github"></i> View on GitHub
+                                            </a>
+                                        </p>
+                                        <p class="mb-0">
+                                            <a target="_blank" class="btn btn-outline-danger" style="color:black !important">
+                                                <i style="color:black !important" class="fas fa-globe"></i> Live
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-project-card card mb-3" style="max-width: 100%;">
+                <div class="row g-0">
+                    <div class="col-md-3 center">
+                        <img src="assets/images/aditya_blog3.png" class="portfolio-project-img img-fluid rounded-start"
+                            alt="...">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body">
+                            <h4 class="card-title"><strong>India Insight</strong></h4>
+                            <h6 class="card-subtitle my-2">Developed a comprehensive news blog website, "India Insight".</h6>
+                            
+                            <h4>Features:</h4>
+                            <p class="card-text">
+                            <ul style="list-style-type: none;">
+                                <li><i class="fa-solid fa-square-check"></i> Implemented secure user authentication for login and registration.</li>
+                                <li><i class="fa-solid fa-square-check"></i> Enabled post management for creating, editing, and deleting news articles.</li>
+                                <li><i class="fa-solid fa-square-check"></i> Integrated dynamic content rendering for real-time news updates.</li>
+                                <li><i class="fa-solid fa-square-check"></i> Built robust backend functionality to handle user requests and data management.<li>
+                                <li><i class="fa-solid fa-square-check"></i> <strong>Technologies</strong>: Python, Django, HTML, CSS, Bootstrap.</li>
+                            </ul>
+                            </p>
+
+                            <div class="container mt-4">
+                                <div class="row justify-content-end">
+                                    <div class="col-auto d-flex align-items-center">
+                                        <p class="mb-0">
+                                            <a target="_blank" class="btn btn-outline-danger" style="color:black !important; margin-right: 20px;" href="https://github.com/aditya-1123/django-blog">
+                                                <i style="color:black !important" class="fab fa-github"></i> View on GitHub
+                                            </a>
+                                        </p>
+                                        <p class="mb-0">
+                                            <a target="_blank" class="btn btn-outline-danger" style="color:black !important" href="https://adityas.pythonanywhere.com/">
+                                                <i style="color:black !important" class="fas fa-globe"></i> Live
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+            <div class="portfolio-project-card card mb-3" style="max-width: 100%;">
+                <div class="row g-0">
+                    <div class="col-md-3 center">
+                        <img src="assets/images/notes_app.png" class="portfolio-project-img img-fluid rounded-start"
+                            alt="...">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body"> 
+                            <h4 class="card-title"><b>Notes App</b></h4>
+                            <h6 class="card-subtitle my-2">Your Personal Note-Taking Companion</h6>
+
+                            <h4>Features:</h4>
+                            <p class="card-text">
+                            <ul style="list-style-type: none;">
+                                <li><i class="fa-solid fa-square-check"></i> Developed a simple note-taking application with CRUD (Create, Read, Update, Delete) functionality.</li>
+                                <li><i class="fa-solid fa-square-check"></i> Implemented user authentication for secure access to notes.</li>
+                                <li><i class="fa-solid fa-square-check"></i> Utilized MongoDB for data storage and management.</li>
+                                <li><i class="fa-solid fa-square-check"></i> Designed the front-end using EJS and Bootstrap for a responsive UI.</li>
+                                <li><i class="fa-solid fa-square-check"></i> <strong>Technologies</strong>: NodeJs, Express, MongoDB, Passport, EJS, Bootstrap.</li>
+                            </ul>
+                            </p>
+                            <div class="container mt-4">
+                                <div class="row justify-content-end">
+                                    <div class="col-auto d-flex align-items-center">
+                                        <p class="mb-0">
+                                            <a target="_blank" class="btn btn-outline-danger" style="color:black !important; margin-right: 20px;" href="https://github.com/aditya-1123/NodeJs-Notes-App">
+                                                <i style="color:black !important" class="fab fa-github"></i> View on GitHub
+                                            </a>
+                                        </p>
+                                        <p class="mb-0">
+                                            <a target="_blank" class="btn btn-outline-danger" style="color:black !important">
+                                                <i style="color:black !important" class="fas fa-globe"></i> Live
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="portfolio-project-card card mb-3" style="max-width: 100%;">
+                <div class="row g-0">
+                    <div class="col-md-3 center">
+                        <img src="assets/images/ecommerce_website.png" class="portfolio-project-img img-fluid rounded-start"
+                            alt="...">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body">
+                            <h4 class="card-title">E-commerce Platform</h4>
+                            <h6 class="card-subtitle my-2">Your One-Stop Online Shopping Destination</h6>
+                            
+                            <h4>Features:</h4>
+                            <p class="card-text">
+                            <ul style="list-style-type: none;">
+                                <li><i class="fa-solid fa-square-check"></i> Developed an e-commerce website with features like product display and catalog selection.</li>
+                                <li><i class="fa-solid fa-square-check"></i> Implemented cart management and a streamlined checkout process.</li>
+                                <li><i class="fa-solid fa-square-check"></i> Ensured secure user authentication for a safe shopping experience.</li>
+                                <li><i class="fa-solid fa-square-check"></i> Designed a responsive user interface with HTML, CSS, and Bootstrap for seamless navigation.</li>
+                                <li><i class="fa-solid fa-square-check"></i> <strong>Technologies</strong>: Django, Python, HTML, CSS, Bootstrap.</li>
+                            </ul>
+                            </p>
+                            <div class="container mt-4">
+                                <div class="row justify-content-end">
+                                    <div class="col-auto d-flex align-items-center">
+                                        <p class="mb-0">
+                                            <a target="_blank" class="btn btn-outline-danger" style="color:black !important; margin-right: 20px;" href="https://github.com/aditya-1123/E-commerce-website">
+                                                <i style="color:black !important" class="fab fa-github"></i> View on GitHub
+                                            </a>
+                                        </p>
+                                        <p class="mb-0">
+                                            <a target="_blank" class="btn btn-outline-danger" style="color:black !important">
+                                                <i style="color:black !important" class="fas fa-globe"></i> Live
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+    </div>
+
+    <!-- Other Projects-->
+
+    <div id="other-projects">
+
+        <h3 class="mb-5">Other Projects <i class="fa-solid fa-code"></i></h3>
+
+        <div id="other-projects-container" class="container card-container">
+            <!-- Added projects using JS, see app.js-->
+
+        </div>
+        <br>
+        <br>
+    </div>
+
+    <!-- Skills -->
+
+    <div id="portfolio-skills">
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2 class="portfolio-heading">Skills</h2>
+        <div class="container">
+            <span class="portfolio-skill-badge badge bg-light text-dark">Backend Development</span>
+            <span class="portfolio-skill-badge badge bg-light text-dark">Full Stack Development</span>
+            <span class="portfolio-skill-badge badge bg-light text-dark">Machine Learning</span>
+            <span class="portfolio-skill-badge badge bg-light text-dark">Problem Solving</span>
+        </div>
+        <br>
+        <br>
+        <h2 class="portfolio-heading">Languages</h2>
+        <div class="container">
+            <span class="portfolio-skill-badge badge bg-light text-dark">C / C++</span>
+            <span class="portfolio-skill-badge badge bg-light text-dark">Python <i class="fab fa-python"></i></span>
+            <span class="portfolio-skill-badge badge bg-light text-dark">SQL <i class="fa-solid fa-database"></i></span>
+            <span class="portfolio-skill-badge badge bg-light text-dark">HTML / CSS</span>
+            <span class="portfolio-skill-badge badge bg-light text-dark">Javascript <i class="fab fa-js"></i></span>
+            <!-- <span class="portfolio-skill-badge badge bg-light text-dark">Java <i class="fab fa-java"></i></span> -->
+        </div>
+
+        <br>
+        <br>
+        <h2 class="portfolio-heading">Tools & Technologies</h2>
+        <div class="container">
+            <span class="portfolio-skill-badge badge bg-light text-dark">Django</span>
+            <span class="portfolio-skill-badge badge bg-light text-dark">NodeJS</span>
+            <span class="portfolio-skill-badge badge bg-light text-dark">MySQL</span>
+            <span class="portfolio-skill-badge badge bg-light text-dark">MongoDB</span>
+            <span class="portfolio-skill-badge badge bg-light text-dark">Bootstrap</span>
+            <span class="portfolio-skill-badge badge bg-light text-dark">Pandas</span>
+            <span class="portfolio-skill-badge badge bg-light text-dark">Numpy</span>
+            <span class="portfolio-skill-badge badge bg-light text-dark">Matplotlib</span> <br>
+            <span class="portfolio-skill-badge badge bg-light text-dark">Git and GitHub</span>
+            <span class="portfolio-skill-badge badge bg-light text-dark">Postman</span>
+            <span class="portfolio-skill-badge badge bg-light text-dark">VS Code</span>
+            <span class="portfolio-skill-badge badge bg-light text-dark">PyCharm</span>
+            <span class="portfolio-skill-badge badge bg-light text-dark">Jupyter Notebook</span>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <div id="portfolio-highlights">
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2 class="portfolio-heading">Certifications 📜</h2>
+
+        <br>
+        <br>
+        <div class="container">
+            <div id="playlist-container">
+
+                <iframe src="https://drive.google.com/file/d/1Tndvy01w-UURcK6TTCiPjqatV-4Lksym/preview" width="320" height="280" allow="autoplay"></iframe>
+
+                <iframe src="https://drive.google.com/file/d/1OMn2s5oWD4anen1rHzLCR6nQy39eXmgq/preview" width="320" height="280" allow="autoplay"></iframe>
+
+                <iframe src="https://drive.google.com/file/d/1QtcouK8hKd6qKILATyKyTozDgDUc0BFp/preview" width="320" height="280" allow="autoplay"></iframe>
+
+                <iframe src="https://drive.google.com/file/d/1xn1Hv2Z9y2FjPxukiJZr0xZwxfuA-5u8/preview" width="320" height="280" allow="autoplay"></iframe>
+
+                <iframe src="https://drive.google.com/file/d/1xhmPgdMqFIR5yBSu1oPPH6pF4zdbJToo/preview" width="320" height="280" allow="autoplay"></iframe>
+
+                <iframe src="https://drive.google.com/file/d/14eOpgS07VYuCcXnKQCSnSVBB9mnukPrQ/preview" width="320" height="280" allow="autoplay"></iframe>
+
+                <iframe src="https://drive.google.com/file/d/1gVp4Zh13il8HT41dMBZikeZ5pHoWKiKl/preview" width="320" height="280" allow="autoplay"></iframe>
+
+                <iframe src="https://drive.google.com/file/d/11qSFmmJpH4KgMoE6cb-zVRLwrxRdf0Dq/preview" width="320" height="280" allow="autoplay"></iframe>
+
+            </div>
+
+        </div>
+        <br>
+        <br>
+
+        <h2 class="portfolio-heading">Achievements 🏆</h2>
+        <div id="portfolio-achievements" class="container">
+            <b>
+                &nbsp;&nbsp; 1.  Copyright filed for an innovative automatic fan <br>speed controller, intelligently adapting to surrounding<br>environmental
+                factors for optimized performance.
+                <br><br>
+                2.  Solved 450+ DSA problems on various coding <br>platforms like GeeksForGeeks & Leetcode<br><br>
+                &nbsp;3.  Five Star rated in C++ and SQL on HackerRank<br>
+            </b>
+        </div>
+        <br>
+        <br>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div id="portfolio-footer" class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy; 2024 Aditya Gaikwad
+                    </p>
+                </div>
+                <div class="col-sm-2 top">
+                    <div id="portfolio-hero-up">
+                        <span>
+                            <a href="#"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-sm-5 portfolio-footer-social">
+                    <ul>
+                        <li>
+                            <a target="_blank" href="https://github.com/aditya-1123" target="_blank"><i
+                                    class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.linkedin.com/in/aditya-gaikwad-107632230"
+                                target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.instagram.com/adityagaikwad535/" target="_blank"><i
+                                    class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="mailto:gaikwadaditya1123@gmail.com" target="_blank"><i
+                                    class="fa fa-envelope" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
