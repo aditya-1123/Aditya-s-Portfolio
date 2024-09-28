@@ -36,7 +36,6 @@
         <header id="portfolio-navbar" class="d-flex flex-wrap py-3">
 
             <ul id="portfolio-navbar-pills" class="nav nav-pills">
-                <li class="nav-item"><a href="#" class="nav-link" aria-current="page">Home</a></li>
                 <li class="nav-item"><a href="#portfolio-about" class="nav-link">About</a></li>
                 <li class="nav-item"><a href="#portfolio-experience" class="nav-link">Experience</a></li>
                 <li class="nav-item"><a href="#portfolio-education" class="nav-link">Education</a></li>
@@ -44,6 +43,7 @@
                 <li class="nav-item"><a href="#portfolio-skills" class="nav-link">Skills</a></li>
                 <li class="nav-item"><a href="#portfolio-highlights" class="nav-link">Certifications</a></li>
                 <li class="nav-item"><a href="#portfolio-achievements" class="nav-link">Achievements</a></li>
+                <!-- <li class="nav-item"><a href="#portfolio-resume" class="nav-link">Resume</a></li> -->
             </ul>
 
             <ul id="portfolio-sidebar-toggle" class="nav nav-pills">
@@ -71,6 +71,7 @@
             <li class="nav-item"><a href="#portfolio-skills" class="nav-link">Skills</a></li>
             <li class="nav-item"><a href="#portfolio-highlights" class="nav-link">Certifications</a></li>
             <li class="nav-item"><a href="#portfolio-achievements" class="nav-link">Achievements</a></li>
+            <!-- <li class="nav-item"><a href="#portfolio-resume" class="nav-link">Resume</a></li> -->
         </ul>
 
     </div>
@@ -616,10 +617,39 @@
 
 
     <!-- My Resume -->
-    <section class="text-center my-5">
+    <div id="portfolio-resume" class="container">
         <h2 class="portfolio-heading">My Resume 📄</h2>
-        <a href="assets/images/Aditya_Gaikwad.pdf" download="Aditya_Gaikwad.pdf" class="btn btn-dark btn-lg active" style="background-color: white;" role="button" aria-pressed="true" >Download <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1" viewBox="0 0 48 48" enable-background="new 0 0 48 48" height="0.8em" width="0.8em" xmlns="http://www.w3.org/2000/svg" style="margin-left: 0em; font-size: 2.5em; cursor: pointer;"><g fill="#1565C0"><polygon points="24,37.1 13,24 35,24"></polygon><rect x="20" y="4" width="8" height="4"></rect><rect x="20" y="10" width="8" height="4"></rect><rect x="20" y="16" width="8" height="11"></rect><rect x="6" y="40" width="36" height="4"></rect></g></svg></a>
-    </section>    
+        <section class="text-center my-5">
+            <a href="assets/images/Aditya_Gaikwad.pdf" download="Aditya_Gaikwad.pdf" class="btn btn-dark btn-lg active" style="background-color: white;" role="button" aria-pressed="true" >Download <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1" viewBox="0 0 48 48" enable-background="new 0 0 48 48" height="0.8em" width="0.8em" xmlns="http://www.w3.org/2000/svg" style="margin-left: 0em; font-size: 2.5em; cursor: pointer;"><g fill="#1565C0"><polygon points="24,37.1 13,24 35,24"></polygon><rect x="20" y="4" width="8" height="4"></rect><rect x="20" y="10" width="8" height="4"></rect><rect x="20" y="16" width="8" height="11"></rect><rect x="6" y="40" width="36" height="4"></rect></g></svg></a>
+        </section>    
+    </div>
+
+    <!-- Contact us -->    
+    <section id="contact">
+        <div class="container">
+            <h2 class="portfolio-heading">Contact With Me</h2>
+            <form id="contact-form" onsubmit="return validateForm(event)">
+                <div class="form-group">
+                    <label for="name" class="col-form-label text-left" style="display: block; text-align: left;">YOUR NAME</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone" class="col-form-label text-left" style="display: block; text-align: left;">PHONE NUMBER</label>
+                    <input type="tel" id="phone" name="phone" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="col-form-label text-left" style="display: block; text-align: left;">EMAIL</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="message" class="col-form-label text-left" style="display: block; text-align: left;">MESSAGE</label>
+                    <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-outline-secondary mb-3" style="border-radius: 5px;">SEND MESSAGE</button>
+                <p id="status"></p>
+            </form>
+        </div>
+    </section> 
 
     <!-- Footer -->
     <footer class="footer-section">
@@ -661,7 +691,6 @@
         </div>
     </footer>
     <!-- End footer -->
-
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

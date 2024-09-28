@@ -757,3 +757,58 @@ html:not([data-scroll="0"]) #portfolio-float.float {
 .black{
     color: black !important;
 }
+
+/* Contact us */ 
+#portfolio-contact {
+    padding: 50px 0;
+    background-color: #000; /* Background color matches your existing color scheme */
+    color: #fff;
+    text-align: center;
+}
+
+#portfolio-contact h2 {
+    margin-bottom: 30px;
+    font-size: 32px;
+    color: #e50914; /* Highlight color */
+}
+
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: #efe5e5;
+    color: #fff;
+    font-size: 16px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #e50914; /* Focus highlight color */
+    outline: none;
+}
+
+.btn-primary {
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #f40612;
+}
+

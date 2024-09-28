@@ -112,3 +112,33 @@ function addProjects(PROJECTS){
 
 // Call the function to add projects
 addProjects(PROJECTS);
+
+function validateForm(event) {
+  event.preventDefault(); // Prevent the form from reloading the page
+  
+  const status = document.getElementById('status');
+  const name = document.getElementById('name').value;
+  const phone = document.getElementById('phone').value;
+  const email = document.getElementById('email').value;
+  const message = document.getElementById('message').value;
+
+  // Clear previous status
+  status.innerHTML = ''; 
+  status.style.color = ''; 
+
+  // Basic validation
+  if (!name || !phone || !email || !message) {
+      status.innerHTML = 'All fields are required!';
+      status.style.color = 'red';
+      return;
+  }
+
+  // Simulate form submission (you can replace this with an actual server call)
+  setTimeout(() => {
+      status.innerHTML = 'Details submitted successfully!';
+      status.style.color = 'green';
+      
+      // Clear the form fields after submission
+      document.getElementById('contact-form').reset();
+  }, 500); // Simulate delay for the submission process
+}
