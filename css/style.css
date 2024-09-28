@@ -812,3 +812,14 @@ html:not([data-scroll="0"]) #portfolio-float.float {
     background-color: #f40612;
 }
 
+.success-message {
+    background-color: #28a745; /* Green background */
+    color: white;              /* White text */
+    padding: 15px;             /* Add some padding */
+    text-align: center;        /* Center align the text */
+    border-radius: 5px;        /* Slightly rounded corners */
+    font-weight: bold;         /* Make the text bold */
+    margin-top: 20px;          /* Add space from the top */
+    display: none;             /* Hide the message by default */
+}
+

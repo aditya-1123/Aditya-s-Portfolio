@@ -116,27 +116,29 @@ addProjects(PROJECTS);
 function validateForm(event) {
   event.preventDefault(); // Prevent the form from reloading the page
   
-  const status = document.getElementById('status');
+  const successMessage = document.querySelector('.success-message');
   const name = document.getElementById('name').value;
   const phone = document.getElementById('phone').value;
   const email = document.getElementById('email').value;
   const message = document.getElementById('message').value;
 
   // Clear previous status
-  status.innerHTML = ''; 
-  status.style.color = ''; 
+  successMessage.innerHTML = ''; 
+  successMessage.style.display = 'none'; 
 
   // Basic validation
   if (!name || !phone || !email || !message) {
-      status.innerHTML = 'All fields are required!';
-      status.style.color = 'red';
+      successMessage.innerHTML = 'All fields are required!';
+      successMessage.style.backgroundColor = 'red'; // Set red background for error
+      successMessage.style.display = 'block'; // Show the error message
       return;
   }
 
   // Simulate form submission (you can replace this with an actual server call)
   setTimeout(() => {
-      status.innerHTML = 'Details submitted successfully!';
-      status.style.color = 'green';
+      successMessage.innerHTML = 'Details submitted successfully!';
+      successMessage.style.backgroundColor = '#28a745'; // Green background for success
+      successMessage.style.display = 'block'; // Show the success message
       
       // Clear the form fields after submission
       document.getElementById('contact-form').reset();
