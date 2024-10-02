@@ -35,31 +35,31 @@ const PROJECTS = [
     'title':"N-Queens Visualizer",
     'description':"N-Queens solution using backtracking.",
     'image_src':"assets/images/nqueen.png",
-    'project_link':"https://github.com/arunkumar02042002/blog_app_django/"
+    'project_link':"https://github.com/aditya-1123/N-queens-visualiser"
   },
   {
     'title':"Tic-Tac-Toe",
     'description':"Tic-Tac-Toe game using HTML, CSS, JavaScript.",
     'image_src':"assets/images/x-o-game (2).png",
-    'project_link':"https://github.com/arunkumar02042002/Python-Projects/tree/main/8.%20Hangman"
+    'project_link':"https://github.com/aditya-1123/codsoft/tree/main/ticTacToe"
   },
   {
     'title':"Rock-Paper-Scissors",
     'description':"Rock-Paper-Scissors with HTML, CSS, JavaScript.",
     'image_src':"assets/images/rock_paper_scissor.png",
-    'project_link':"https://github.com/arunkumar02042002/Flipcart_reveiw_Scrapper"
+    'project_link':"https://github.com/aditya-1123/codsoft/tree/main/rockPaperScissor"
   },
   {
     'title':"Password Generator",
     'description':"Generate passwords using HTML, CSS, JavaScript.",
     'image_src':"assets/images/password_generator.png",
-    'project_link':"https://github.com/arunkumar02042002/Python-Projects/tree/main/4.%20X-O%20Game"
+    'project_link':"https://github.com/aditya-1123/codsoft/tree/main/password_generator"
   },
   {
     'title':"Simple Calculator",
     'description':"Simple calculator built with HTML, CSS, JavaScript.",
     'image_src':"assets/images/calci.png",
-    'project_link':"https://github.com/arunkumar02042002/blog_api/"
+    'project_link':"https://github.com/aditya-1123/codsoft/tree/main/calci"
   },
 ]
 
